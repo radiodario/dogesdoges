@@ -4,7 +4,6 @@ import * as actionTypes from '../actions'
 
 function* fetchDogData(action) {
   const { breed, subBreed } = action;
-
   const id = subBreed ? `${breed}-${subBreed}` : breed
   const image = yield call(Api.fetchImage, breed, subBreed)
   const text = yield call(Api.fetchText)

@@ -3,7 +3,7 @@ import { sortBy } from 'lodash';
 import DogList from '../components/DogList';
 import { SortingDirections} from '../actions'
 
-const getSortedDogs = (dogs, sorting) => {
+export const getSortedDogs = (dogs, sorting) => {
   const allDogs = dogs.allIds.map(id => dogs.byId[id])
   switch (sorting) {
     case SortingDirections.ASCENDING:
