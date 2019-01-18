@@ -11,7 +11,7 @@ const getSortedDogs = (dogs, sorting) => {
     case SortingDirections.DESCENDING:
       return sortBy(allDogs, ['breed', 'subBreed']).reverse()
     default:
-      return dogs
+      return allDogs
   }
 }
 
