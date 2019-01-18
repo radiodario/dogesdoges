@@ -16,7 +16,7 @@ DogList.propTypes = {
       breed: PropTypes.string.isRequired,
       subBreed: PropTypes.string,
       text: PropTypes.string.isRequired,
-      imageUrl: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
       }).isRequired
     ).isRequired
 }

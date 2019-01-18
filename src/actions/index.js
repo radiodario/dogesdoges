@@ -10,5 +10,5 @@ export const SortingDirections = {
 }
 
 
-export const LOAD_DOGS_REQUEST = 'LOAD_DOGS_REQUEST';
-export const LOAD_DOGS_SUCCESS = 'LOAD_DOGS_SUCCESS';
+export const FETCH_DOG_REQUEST = 'FETCH_DOG_REQUEST';
+export const FETCH_DOG_SUCCESS = 'FETCH_DOG_SUCCESS';

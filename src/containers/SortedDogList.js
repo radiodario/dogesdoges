@@ -1,13 +1,15 @@
 import { connect } from 'react-redux';
 import { sortBy } from 'lodash';
 import DogList from '../components/DogList';
+import { SortingDirections} from '../actions'
 
 const getSortedDogs = (dogs, sorting) => {
+  const allDogs = dogs.allIds.map(id => dogs.byId[id])
   switch (sorting) {
-    case 'ASC':
-      return sortBy(dogs, d => (d.breed + d.subBreed))
-    case 'DSC':
-      return sortBy(dogs, d => (d.breed + d.subBreed)).reverse()
+    case SortingDirections.ASCENDING:
+      return sortBy(allDogs, ['breed', 'subBreed'])
+    case SortingDirections.DESCENDING:
+      return sortBy(allDogs, ['breed', 'subBreed']).reverse()
     default:
       return dogs
   }

@@ -3,10 +3,11 @@ import * as actionTypes from '../actions'
 
 const byId = (state = {}, action) => {
   switch (action.type) {
-    case actionTypes.LOAD_DOGS_SUCCESS: {
+    case actionTypes.FETCH_DOG_SUCCESS: {
+      const { dog } = action;
       return {
         ...state,
-        ...action.dogs
+        [dog.id] : dog,
       }
     }
     default:
@@ -16,10 +17,11 @@ const byId = (state = {}, action) => {
 
 const allIds = (state = [], action) => {
   switch (action.type) {
-    case actionTypes.LOAD_DOGS_SUCCESS: {
+    case actionTypes.FETCH_DOG_SUCCESS: {
+      const { dog } = action;
       return [
         ...state,
-        ...Object.keys.call(null, action.dogs),
+        dog.id,
       ]
     }
     default:
