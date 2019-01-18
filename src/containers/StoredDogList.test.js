@@ -1,25 +1,33 @@
 import { getSortedDogs } from './SortedDogList'
-const dogs = {
+export const dogs = {
   byId: {
     'terrier-boston': {
       id: 'terrier-boston',
       breed: 'terrier',
       subBreed: 'boston',
+      text: 'hi',
+      image: 'hi',
     },
     'corgi': {
       id: 'corgi',
       breed: 'corgi',
       subBreed: null,
+      text: 'hi',
+      image: 'hi',
     },
     'mastiff-spanish': {
       id: 'mastiff-spanish',
       breed: 'mastiff',
       subBreed: 'spanish',
+      text: 'hi',
+      image: 'hi',
     },
     'mastiff-english': {
       id: 'mastiff-english',
       breed: 'mastiff',
       subBreed: 'english',
+      text: 'hi',
+      image: 'hi',
     },
   },
   allIds: [

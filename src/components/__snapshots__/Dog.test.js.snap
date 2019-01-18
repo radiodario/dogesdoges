@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Dog-Breed"
+>
+  <h4>
+    corgi - pembroke
+  </h4>
+  <img
+    alt="corgi - pembroke"
+    src="https://placehold.it/100"
+  />
+  <div
+    className="Dog-Breed--Text"
+  >
+    woof woof
+  </div>
+</div>
+`;

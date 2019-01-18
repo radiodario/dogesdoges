@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ul>
+  <div
+    className="Dog-Breed"
+  >
+    <h4>
+      terrier - boston
+    </h4>
+    <img
+      alt="terrier - boston"
+      src="hi"
+    />
+    <div
+      className="Dog-Breed--Text"
+    >
+      hi
+    </div>
+  </div>
+  <div
+    className="Dog-Breed"
+  >
+    <h4>
+      corgi
+    </h4>
+    <img
+      alt="corgi"
+      src="hi"
+    />
+    <div
+      className="Dog-Breed--Text"
+    >
+      hi
+    </div>
+  </div>
+  <div
+    className="Dog-Breed"
+  >
+    <h4>
+      mastiff - spanish
+    </h4>
+    <img
+      alt="mastiff - spanish"
+      src="hi"
+    />
+    <div
+      className="Dog-Breed--Text"
+    >
+      hi
+    </div>
+  </div>
+  <div
+    className="Dog-Breed"
+  >
+    <h4>
+      mastiff - english
+    </h4>
+    <img
+      alt="mastiff - english"
+      src="hi"
+    />
+    <div
+      className="Dog-Breed--Text"
+    >
+      hi
+    </div>
+  </div>
+</ul>
+`;
