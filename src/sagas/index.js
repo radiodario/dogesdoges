@@ -2,7 +2,7 @@ import { call, put, fork, take } from 'redux-saga/effects'
 import Api from '../api/index.js'
 import * as actionTypes from '../actions'
 
-function* fetchDogData(action) {
+export function* fetchDogData(action) {
   const { breed, subBreed } = action;
   const id = subBreed ? `${breed}-${subBreed}` : breed
   const image = yield call(Api.fetchImage, breed, subBreed)
@@ -20,7 +20,7 @@ function* fetchDogData(action) {
   })
 }
 
-function* fetchDogs() {
+export function* fetchDogs() {
   const dogsObject = yield call(Api.fetchDogs)
   const breeds = Object.keys.call(null, dogsObject)
 
@@ -48,7 +48,7 @@ function* fetchDogs() {
 
 }
 
-function* fetchDogSaga() {
+export function* fetchDogSaga() {
   while (true) {
     const action = yield take(actionTypes.FETCH_DOG_REQUEST)
     yield fork(fetchDogData, action)
